@@ -63,17 +63,22 @@ module.exports.connections = {
   //   database: 'articlebase'
   // },
 
-  localmongodb: {
-    adapter: 'sails-mongo',
-    host: 'localhost',
-    port: 27017,
-    database: 'articlebase'
-  },
+  // localmongodb: {
+  //   adapter: 'sails-mongo',
+  //   host: 'localhost',
+  //   port: 27017,
+  //   database: 'articlebase'
+  // },
 
-  productionMongo: {
+  // productionMongo: {
+  //   adapter: 'sails-mongo',
+  //   url:process.env.MONGODB_URI
+  // }
+
+  mongodb: {
     adapter: 'sails-mongo',
     url:process.env.MONGODB_URI
-  }
+  },
 
   /***************************************************************************
   *                                                                          *
